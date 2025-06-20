@@ -1,0 +1,18 @@
+<svg width="250" height="80" viewBox="0 0 250 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="multiGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3B82F6" />    <!-- Blue -->
+      <stop offset="50%" stop-color="#6366F1" />   <!-- Indigo -->
+      <stop offset="100%" stop-color="#8B5CF6" />  <!-- Violet -->
+    </linearGradient>
+  </defs>
+
+  <!-- Tooth Icon with Gradient -->
+  <path d="M40 20c-6 0-11 5-11 11 0 9 5 28 11 28s7-9 9-9 2 9 9 9 11-19 11-28c0-6-5-11-11-11-4 0-6 3-9 7-3-4-5-7-9-7z"
+        fill="url(#multiGradient)" />
+
+  <!-- Brand Name -->
+  <text x="80" y="50" font-family="Segoe UI, sans-serif" font-size="32" font-weight="bold" fill="#1E293B">
+    Dentistic
+  </text>
+</svg>
