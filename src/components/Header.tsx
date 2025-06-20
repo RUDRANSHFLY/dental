@@ -1,28 +1,37 @@
-import React from 'react'
-import Image from 'next/image'
-import { Button } from './ui/button'
+"use client";
+
+import React from "react";
+import Image from "next/image";
+import { Button } from "./ui/button";
 
 const Header = () => {
   return (
-   <header className='max-w-7xl sticky flex  justify-between items-center text-blue-500 mt-2 h-15 bg-blue-100 mx-auto rounded-md'>
-        <div>
-            <Image className='cursor-pointer' src={'/images/logo.svg'} alt='logo' width={200} height={200} />
-        </div>
-        <div className='flex items-center gap-x-5'>
-            <p className='text-xl font-bold'>
-                (610) 649-0313
-            </p>
-            <Button className="cursor-pointer bg-blue-900 hover:text-blue-950">
-                Online Scheduling
-            </Button>
-        </div>
-        <div>
-            <div>
-                    
-            </div>
-        </div>
-   </header>
-  )
-}
+    <header className="fixed top-0 left-0 w-full z-50 bg-blue-50 text-blue-800 shadow-sm">
+      {/* Inner wrapper for content */}
+      <div className="mx-auto max-w-7xl px-4 md:px-8 py-3 flex justify-between items-center">
+        {/* Logo */}
+        <Image
+          src="/images/logo.svg"
+          alt="Logo"
+          width={160}
+          height={60}
+          className="cursor-pointer"
+          priority
+        />
 
-export default Header
+        {/* Phone & CTA */}
+        <div className="hidden sm:flex items-center gap-x-4">
+          <p className="text-lg font-semibold">(610) 649-0313</p>
+          <Button className="bg-blue-900 text-white hover:bg-blue-800 transition">
+            Online Scheduling
+          </Button>
+        </div>
+      </div>
+
+      {/* Full-width animated gold bar */}
+      <div className="w-full h-5 bg-animated-gold shine-overlay" />
+    </header>
+  );
+};
+
+export default Header;

@@ -1,14 +1,37 @@
 import Header from "@/components/Header";
 import ImageCarousel from "@/components/ImageCarousel";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import Results from "@/components/Results";
+import Reviews from "@/components/Reviews";
+import Schedule from "@/components/Schedule";
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
+      {/* Header */}
       <Header />
-      <MaxWidthWrapper>
-        <ImageCarousel />
-      </MaxWidthWrapper>
+
+      {/* Hero / Carousel */}
+      <section className="min-h-screen py-10">
+        <MaxWidthWrapper>
+          <ImageCarousel />
+        </MaxWidthWrapper>
+      </section>
+
+      {/* Schedule & Reviews */}
+      <section className="w-screen py-16">
+        <Schedule />
+        <div className="mt-10">
+          <Reviews />
+        </div>
+      </section>
+
+      {/* Results */}
+      <section className="py-16">
+        <MaxWidthWrapper>
+          <Results />
+        </MaxWidthWrapper>
+      </section>
     </main>
   );
 }
