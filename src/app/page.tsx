@@ -1,7 +1,6 @@
 import AskTheExpert from "@/components/AskTheExpert";
 import CosmeticDentistry from "@/components/CosmeticDentistry";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+
 import ImageCarousel from "@/components/ImageCarousel";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import OfficeAwards from "@/components/OfficeAwards";
@@ -13,9 +12,6 @@ import Schedule from "@/components/Schedule";
 export default function Home() {
   return (
     <main className="overflow-x-hidden">
-      {/* Header */}
-      <Header />
-
       {/* Hero / Carousel */}
       <section className="min-h-screen py-10">
         <MaxWidthWrapper>
@@ -42,7 +38,6 @@ export default function Home() {
       <OfficeAwards />
       <AskTheExpert />
       <CosmeticDentistry />
-      <Footer />
     </main>
   );
 }
